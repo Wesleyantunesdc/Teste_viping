@@ -1,0 +1,5 @@
+package br.com.nsinova.viping.config;
+
+public class TestConfig {
+
+}

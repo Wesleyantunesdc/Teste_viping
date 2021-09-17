@@ -1,0 +1,21 @@
+package br.com.nsinova.viping.servico;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import br.com.nsinova.viping.modelo.RegistroAtividade;
+import br.com.nsinova.viping.repositorios.RegistroRepositorio;
+
+@Service
+public class RegistroServico {
+
+	@Autowired
+	private RegistroRepositorio registroRepositorio;
+	
+	public List<RegistroAtividade> buscarTodos(){
+		return registroRepositorio.findAll();
+	}
+}
+

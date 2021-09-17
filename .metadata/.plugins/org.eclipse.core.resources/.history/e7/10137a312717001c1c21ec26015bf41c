@@ -1,0 +1,14 @@
+package br.com.nsinova.viping.modelo;
+
+import java.io.Serializable;
+
+public class RegistroAtividade implements Serializable{
+	
+	private static final long serialVersionUID = 1L;
+	
+	public RegistroAtividade() {	
+	}
+	
+	
+
+}
