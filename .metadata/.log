@@ -951,3 +951,15 @@ Binding(CTRL+SHIFT+C,
 		,,true),null),
 	org.eclipse.ui.defaultAcceleratorConfiguration,
 	org.eclipse.ui.textEditorScope,,,system)
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-09-20 10:11:18.838
+!MESSAGE ClasspathListenerHandler removeClasspathListener sts4.classpath.uUqRxqvS
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-09-20 10:11:18.839
+!MESSAGE unsubscribing from classpath changes: sts4.classpath.uUqRxqvS
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-09-20 10:11:18.840
+!MESSAGE subsribers = {}
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-09-20 10:11:18.840
+!MESSAGE ClasspathListenerHandler removeClasspathListener sts4.classpath.uUqRxqvS => OK
