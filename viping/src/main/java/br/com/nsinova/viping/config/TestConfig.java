@@ -20,8 +20,8 @@ public class TestConfig implements CommandLineRunner{
 
 	@Override
 	public void run(String... args) throws Exception {
-		RegistroAtividade reg1 = new RegistroAtividade(null, new Date(), "Vendas", "Usuario realizou uma venda");
-		RegistroAtividade reg2 = new RegistroAtividade(null, new Date(), "Anuncio", "Usuario criou um anuncio");
+		RegistroAtividade reg1 = new RegistroAtividade(1l, new Date(), "Vendas", "Usuario realizou uma venda",132323232);
+		RegistroAtividade reg2 = new RegistroAtividade(2l, new Date(), "Anuncio", "Usuario criou um anuncio",21232222);
 		
 		registroRepositorio.saveAll(Arrays.asList(reg1,reg2));
 	}

@@ -21,8 +21,12 @@ public class RegistroServico {
 	
 	public RegistroAtividade obterPorId(Long id){
 		Optional<RegistroAtividade> obj = registroRepositorio.findById(id);
-		// .get retorna objeto dentro do optional 
 		return obj.get();
+		// .get retorna objeto dentro do optional 
+	}
+	
+	public RegistroAtividade salvar(RegistroAtividade registro) {
+		return registroRepositorio.save(registro);	
 	}
 }
 

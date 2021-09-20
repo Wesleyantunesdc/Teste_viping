@@ -8,6 +8,8 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 
+import com.fasterxml.jackson.annotation.JsonFormat;
+
 @Entity
 public class RegistroAtividade implements Serializable {
 
@@ -16,19 +18,22 @@ public class RegistroAtividade implements Serializable {
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long id;
+	@JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "yyyy-MM-dd'T'HH:mm:ssZ", timezone = "GMT")
 	private Date data;
 	private String tipo;
 	private String descricao;
+	private Integer user_id;
 
 	public RegistroAtividade() {
 	}
 
-	public RegistroAtividade(Long id, Date data, String tipo, String descricao) {
+	public RegistroAtividade(Long id, Date data, String tipo, String descricao, Integer user_id) {
 		super();
 		this.id = id;
 		this.data = data;
 		this.tipo = tipo;
 		this.descricao = descricao;
+		this.user_id = user_id;
 	}
 
 	public Long getId() {
@@ -65,6 +70,14 @@ public class RegistroAtividade implements Serializable {
 
 	public static long getSerialversionuid() {
 		return serialVersionUID;
+	}
+	
+	public Integer getUser_id() {
+		return user_id;
+	}
+	
+	public void setUser_id(Integer user_id) {
+		this.user_id = user_id;
 	}
 
 	@Override

@@ -1,0 +1,14 @@
+package br.com.nsinova.viping.servico;
+
+import org.springframework.stereotype.Service;
+
+import br.com.nsinova.viping.modelo.Notificacao;
+import br.com.nsinova.viping.modelo.RegistroAtividade;
+
+@Service
+public class NotificacaoServico {
+	
+	public RegistroAtividade gerarRegistroAtividade(Notificacao notificacao) {
+		return null;
+	}
+}
